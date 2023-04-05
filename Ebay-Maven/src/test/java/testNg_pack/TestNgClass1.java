@@ -64,6 +64,7 @@ public class TestNgClass1 {
 			System.setProperty("webdriver.opera.driver",
 					"C:\\Users\\Om\\Desktop\\Automation\\operadriver_win32\\operadriver_win32\\operadriver.exe");
 			driver = new OperaDriver();
+			
 		}
 		if(browserName.equals("Internet Expoler")) {
 			System.setProperty("webdriver.ie.driver",
