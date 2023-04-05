@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ebayTestSuit" thread-count="2" parallel="tests">
+  <test thread-count="2" name="ChromeTest" parallel="classes">
+  <parameter name="browser" value="Chrome"></parameter>
+    <classes>
+      <class name="testNg_pack.TesNgClass2">
+      <methods>
+      <include name="testA"></include>
+      </methods>
+      </class>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="FirefoxTest" parallel="classes">
+  <parameter name="browser" value="Firefox"></parameter>
+    <classes>
+      <class name="testNg_pack.TesNgClass2">
+      <methods>
+      <include name="testA"></include>
+      </methods>
+      </class>
+      
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="OperaTest" parallel="classes">
+  <parameter name="browser" value="Opera"></parameter>
+    <classes>
+      <class name="testNg_pack.TesNgClass2">
+      <methods>
+      <include name="testA"></include>
+      </methods>
+      </class>
+      
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="InternetExplorerTest" parallel="classes">
+  <parameter name="browser" value="Internet Expoler"></parameter>
+    <classes>
+      <class name="testNg_pack.TesNgClass2">
+      <methods>
+      <include name="testA"></include>
+      </methods>
+      </class>
+      
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- ebayTestSuit -->
